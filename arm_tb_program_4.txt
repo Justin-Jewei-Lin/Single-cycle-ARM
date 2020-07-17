@@ -1,0 +1,35 @@
+//sum of 1 to 100
+e3a00064 //mov	r0, #100	; 0x64
+e3a01000 //mov	r1, #0
+e3a02000 //mov	r2, #0
+e0822001 //add	r2, r2, r1
+e2911001 //add	r1, r1, #1
+e1510000 //cmp	r1, r0
+3afffffc //bcc	c <Loop>
+e3a0a028
+e58a2000
+//store
+e3a03000
+e3a04001
+e3a0001e
+e5834000
+e2833004
+e2844003
+e1500004
+cafffffb
+//load
+e3a03000
+e3a05000
+e3a06000
+e5934000
+e2833004
+e0855004
+e2866003
+e1560000
+bafffffa
+e3a0a02c
+e58a5000
+0
+0
+0
+0
