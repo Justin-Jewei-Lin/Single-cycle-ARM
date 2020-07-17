@@ -12,7 +12,6 @@ module shift(reg_data, shift_type, shift_number, shift_out);
 			2'b00: shift_out = reg_data << shift_number;
 			2'b01: shift_out = reg_data >> shift_number;
 			2'b10: shift_out = reg_data >>> shift_number;
-//			2'b11: shift_out = {reg_data, reg_data}[63-shift_number:32-shift_number];
 			2'b11: {tmp, shift_out} = {reg_data, reg_data} >> shift_number;	// right rotate
 		endcase
 	end

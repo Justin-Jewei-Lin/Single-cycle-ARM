@@ -77,7 +77,6 @@ module ARM(clk,rst);
 		if( rst == 1'b1 )
 			pc <= 32'd0;
 		else
-//			pc = pc_add_4;
 			pc <= pc_next;
 	end
 endmodule
