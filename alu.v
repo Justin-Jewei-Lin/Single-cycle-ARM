@@ -43,5 +43,5 @@ module alu(source_1, source_2, alu_op, c_in, nzcv, alu_out);
 			default: v = 1'b0;
         endcase
 		
-   assign nzcv = {alu_out[31], ~(|alu_out), c, v};
+    assign nzcv = {alu_out[31], ~(|alu_out), c, v};
 endmodule

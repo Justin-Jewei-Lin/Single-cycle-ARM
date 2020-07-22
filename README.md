@@ -4,4 +4,4 @@
 ![image](CPU_structure.png)
 
 - Provides 4 testbenches for validation.
-- You can run through all testbenches by running *run.bat* (if you have already install **Icarus Verilog**).
+- You can run through all testbenches by running *run.bat* (if you have already installed **Icarus Verilog**).

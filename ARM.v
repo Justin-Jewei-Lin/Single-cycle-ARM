@@ -73,10 +73,8 @@ module ARM(clk,rst);
 			nzcv_n <= (update_nzcv)? nzcv:nzcv_n; 
 
 	always@(posedge clk or posedge rst)
-	begin
 		if( rst == 1'b1 )
 			pc <= 32'd0;
 		else
 			pc <= pc_next;
-	end
 endmodule
